@@ -1,5 +1,5 @@
 class Solution:
-    def lengthOfLongestSubstring(self, s):
+    def lengthOfLongestSubstring(s):
         maxLength = 0
         start = 0
         usedChar = {}
@@ -15,7 +15,7 @@ class Solution:
 if __name__ == "__main__":
     s1 = "pwwkew"
     s2 = "abba"
-    maxLength1 = Solution.lengthOfLongestSubstring(s1, s1)
-    maxLength2 = Solution.lengthOfLongestSubstring(s2, s2)
+    maxLength1 = Solution.lengthOfLongestSubstring(s1)
+    maxLength2 = Solution.lengthOfLongestSubstring(s2)
 
     print(maxLength1, maxLength2)

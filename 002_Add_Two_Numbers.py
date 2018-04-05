@@ -19,9 +19,9 @@ class ListNode_handle:
         while node:
             print('\nvalue:', node.val)
             node = node.next
- # Solution:
+
 class Solution:
-    def addTwoNumbers(self, l1, l2):
+    def addTwoNumbers(l1, l2):
         dummy = cur = ListNode(0)
         carry = 0
         while l1 or l2 or carry:
@@ -47,12 +47,7 @@ if __name__ == "__main__":
         l2 = ListNode_2.add(j)
     # l2 : 5 --> 6 --> 4
 
-    # ListNode_1.print_ListNode(l1)
-    # ListNode_2.print_ListNode(l2)
-    # print(type(l1))
-    # print(type(l2))
-
-    result = Solution.addTwoNumbers(0, l1, l2)
+    result = Solution.addTwoNumbers(l1, l2)
     # result: 7 --> 0 --> 8
     resultList = [result.val]
     while result.next:
